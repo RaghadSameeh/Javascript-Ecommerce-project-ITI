@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolaby</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8f96206960.css" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+
+<body onload="slideshow() , loadproducts() , checkuser()" >
+    <header>
+        <ul id="head">
+            <li id="list">
+                <a href="index.html"><img src="photos\logo site.jpg" id="photo"> </a>
+            </li>
+            <li id="icon">
+                <i class="fa-solid fa-location-dot awesomstyle"></i>
+            </li>
+            <li id="deliver">
+                <div>Deliver to</div>
+                <div style="clear:both"></div>
+                <div id="city">Egypt</div>
+            </li>
+            <li id="searchcontainer">
+                <input id="search" type="search" placeholder="Search" name="search">
+                <button type="submit" id="btnsearch"  for="search" onclick="getitem()"><i class="fa-solid fa-magnifying-glass buttontext"></i></button>
+            </li>
+            <li id="signin1">
+                <a id="anchor" href="./signIn.html ">sign in</a>
+                
+            </li>
+            <li onclick="opencart()"  id="cart">
+
+                <div id="counter">0</div>
+                <div><i  class="fa-solid fa-cart-shopping cart"></i></div>
+                <div id="cartword">Cart</div>
+
+
+
+            </li>
+        </ul>
+        <div style="clear: both;"></div>
+    </header>
+    <main>
+        <div id="backimg" ><img id="slideshow"  src="/photos/1.png"></div>
+        <section id="main">
+        </section>
+        <div></div>
+
+
+    </main>
+
+    <footer>
+        <a href="#top">
+            <div class="footer">
+                <p id="back_to_home">Back to Home</p>
+            </div>
+        </a>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8f96206960.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
